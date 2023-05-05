@@ -1,0 +1,17 @@
+.layout {
+  box-sizing: border-box;
+  width: 85%;
+  margin: 0 auto;
+  background-color: #282c34;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.content{
+  min-width: 400px;
+}
+
+
+
+

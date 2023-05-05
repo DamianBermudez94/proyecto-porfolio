@@ -1,0 +1,250 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+/*Estilos Home- Principal*/
+.home{
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+}
+
+
+.home-welcome{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0 50px 0;
+}
+
+
+.home .title-welcome .title-custom{
+  --total: calc(var(--duration) + var(--delay));
+  display: block;
+  position: relative;
+  color: white;
+  overflow: hidden;
+  animation: revealTextCustom 1s var(--total) forwards;
+  font-size: 40px;
+  padding: 10px;
+  
+}
+.title-welcome .title-custom::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  background:rgba(252, 136, 136,0.8);
+  animation:
+      rollIn var(--duration) var(--delay) forwards,
+      rollOut var(--duration) var(--total) forwards;
+}
+.title-welcome .title-custom:nth-child(1)::after {
+  border-top: 3px solid rgb(252, 136, 136);
+}
+.title-welcome span {
+  --total: calc(var(--duration) + var(--delay));
+  display: block;
+  position: relative;
+  color: white;
+  overflow: hidden;
+  animation: revealText 1s var(--total) forwards;
+  font-size: 40px;
+  padding: 10px;
+  
+}
+
+.title-welcome span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  background:rgba(252, 136, 136,0.8);
+  animation:
+      rollIn var(--duration) var(--delay) forwards,
+      rollOut var(--duration) var(--total) forwards;
+}
+
+.title-welcome span:nth-child(2)::after {
+  border-top: 3px solid rgb(252, 136, 136);
+}
+
+
+
+.parrafo-welcome span{ 
+  --total: calc(var(--duration) + var(--delay));
+  position: relative;
+  display: block;
+  color: white;
+  overflow: hidden;
+  animation: revealText 1s var(--total) forwards;
+  font-size: 40px;
+  padding: 0;
+  border: none;
+}
+.parrafo-welcome span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border: transparent;
+  transform: scaleX(0);
+  transform-origin: left;
+  background:rgba(252, 136, 136,0.8);
+  animation:
+      rollIn var(--duration) var(--delay) forwards,
+      rollOut var(--duration) var(--total) forwards;
+}
+.parrafo-welcome span:nth-child(1)::after {
+  border-top: 3px solid rgb(252, 136, 136);
+}
+@keyframes revealText {
+  to {
+      color: #fff;
+     
+  }
+}
+
+@keyframes revealTextCustom {
+  to {
+    color: rgb(252, 136, 136);
+  }
+}
+
+@keyframes rollIn {
+  from {
+      transform: scaleX(0);
+  }
+
+  to {
+      transform: scaleX(1);
+  }
+}
+
+@keyframes rollOut {
+  from {
+      transform: translateX(0);
+  }
+
+  to {
+      transform: translateX(105%);
+  }
+}
+.section-me{
+  padding: 60px;
+
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #212121;
+}
+.section-me h2{
+  margin: 0;
+  padding: 50px;
+  
+}
+.lasts-works{
+  text-align: center;
+}
+
+/*Estilos footer*/
+
+input[type="text"],
+textarea
+{
+  width: 250px;
+  margin-top: 25px;
+  display: block;
+  padding: 15px;
+
+}
+
+input[type="submit"],
+button{
+  font-size: 18px;
+  padding: 15px;
+  text-decoration: none;
+  border: 0px;
+  margin-top: 15px;
+  border-radius: 5px;
+  color: white;
+  background-color: #fa4529;
+  transition: all 300ms;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover{
+  background-color: #fa9484;
+}
+
+/* Estilos seccion porfolio */
+
+.works{
+  display: flex;
+  justify-content: center;
+
+}
+.works-item{
+  flex-basis: 35%;
+  margin: 30px;
+}
+.works-item img{
+  width: 120%;
+  border: 1px solid #ddd;
+  box-shadow: 0px 5px 14px #ddd;
+}
+
+.works-item .content-img{
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+
+}
+.works-item span{
+  display: block;
+  color: gray;
+  margin-top: 35px;
+}
+.works-item h2{
+  display: block;
+  color: black;
+  margin-top: 5px;
+  font-size: 25px;
+}
+.works-item a{
+  
+  color: black;
+  text-decoration: none;
+  transition: none;
+}
+.works-item a:hover{
+  
+  color: #fa9484;
+
+}

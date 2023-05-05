@@ -1,0 +1,22 @@
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom';
+import { trabajos } from '../data/trabajos';
+
+export const Proyecto = () => {
+    // Creamos un estado 
+    const [proyecto,setProyecto] = useState({})
+    //Usamos el useParams para poder recibir la url como parametro
+    const params = useParams();
+    // Usamos el useEffect para que automaticamente se actulice el componente
+    useEffect(()=>{
+        let proyecto = trabajos.filter(trabajo => trabajo.id === params.id)
+        setProyecto(proyecto[0])
+    },[])
+  return (
+    <div>
+        <h1>{proyecto.id}</h1>
+        
+
+    </div>
+  )
+}

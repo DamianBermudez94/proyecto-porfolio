@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*Estilos Home- Principal*/
+.home h1{
+  font-size: 55px;
+  font-weight: 400;
+
+ 
+}
+.home strong{
+  color: #fa4529;
+}
+
+.home h2{
+  color:rgb(80, 80, 80);
+  font-weight: lighter;
+}
+.home a{
+  padding: 7px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #fa4529;
+  transition: all 300ms;
+}
+
+.home a:hover{
+  background-color: #fa9484;
+}
+
+.home .heading{
+  font-size: 40px;
+  font-weight: 500;
+  color: white;
+}
+.home p{
+  color: #fa9484;
+}
+
+/*Estilos footer*/
+
+input[type="text"],
+textarea
+{
+  width: 250px;
+  margin-top: 25px;
+  display: block;
+  padding: 15px;
+
+}
+
+input[type="submit"],
+button{
+  font-size: 18px;
+  padding: 15px;
+  text-decoration: none;
+  border: 0px;
+  margin-top: 15px;
+  border-radius: 5px;
+  color: white;
+  background-color: #fa4529;
+  transition: all 300ms;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover{
+  background-color: #fa9484;
+}

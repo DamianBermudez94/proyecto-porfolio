@@ -1,0 +1,10 @@
+.footer{
+    min-height: 40px;
+    line-height: 7px;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 35px;
+    padding-top: 45px;
+    border-color: 3px solid black;
+    position: relative;
+}

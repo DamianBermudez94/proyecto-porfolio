@@ -1,0 +1,12 @@
+.header{
+    background-color:rgba(83, 83, 83, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header, .logo, ul {
+    justify-content: space-around;
+}
+.header, li{
+    display: flex;
+}

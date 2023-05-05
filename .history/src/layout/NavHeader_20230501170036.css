@@ -1,0 +1,51 @@
+.header{
+    background-color:rgba(83, 83, 83, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .logo{
+    flex-grow: 2;
+    display: flex;
+}
+.header .logo span{
+    display: block;
+    font-size: 150px;
+    font-weight: bolder;
+    margin-top: -20px;
+}
+.header .logo h3{
+    display: block;
+    flex-basis: 40px;
+    margin-left: 10px;
+    font-weight: lighter;
+    background-color: red;
+
+}
+.header, nav{
+    flex-grow: 1;
+    height: 132px;
+}
+
+.header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    
+ 
+}
+.header li{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bold;
+    margin:  15px 15px 0 0;
+}
+.header li a{
+    text-decoration: none;
+    transition: all 300ms;
+}
+.header a:hover{
+    color: rgb(255, 80, 80)
+}
