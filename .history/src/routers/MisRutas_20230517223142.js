@@ -27,7 +27,7 @@ export const MisRutas = () => {
                   <Route path='/conocimientos' element={<Conocimientos/>}/>
                   <Route path='/contacto' element={<Contacto/>}/>
                   <Route path='/proyecto/:id' element={<Proyecto/>}/> 
-                  <Route path='*' element={<Error/>}/> 
+                  {/**/}<Route path='*' element={<Error/>}/> 
           </Routes>
         </section>
             
