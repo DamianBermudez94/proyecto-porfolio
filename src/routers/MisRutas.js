@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import './style.css'
 import { Inicio } from '../components/Inicio'
 import { Porfolio } from '../components/Porfolio'

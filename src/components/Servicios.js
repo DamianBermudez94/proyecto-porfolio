@@ -57,7 +57,7 @@ export const Servicios = () => {
                     
             </div>
             <div className="container-cv">
-                <a className="btn-cv" href="./archivo-pdf/Damián Bermúdez (5).pdf" download="CV-damian-bermudez.pdf">Descargar CV</a>
+                <a className="btn-cv" href="./cv-pdf/Damián bermúdez - actualizado.pdf" download="CV-damian-bermudez.pdf">Descargar CV</a>
                
             </div>
         </section>

@@ -17,8 +17,8 @@ export const Servicios = () => {
                                     />
                                 </div>
                                 <div class="card__body card__body--flex">
-                                    <h2 class="card__title">Hisma Desert</h2>
-                                    <span class="card__arrow">&rarr;</span>
+                                    <h2 class="card__title">Front end</h2>
+                                   
                                 </div>
                             </div>
                             <div class="card__side card__side--back">
@@ -26,6 +26,7 @@ export const Servicios = () => {
                                     <p>
                                     Mi trabajo se basa en el desarrollo de las interfaces de usuario para Singles Pages Apps montadas en la web, utilizando diferentes hostings para poder alojarlas. Donde tambíen consumo API´s REST para poder montar el contenido. Utilizando el paradigma de programación reactiva por medio de un estado y routers para mantener actualizados los entornos y redirigir la navegación. Lo que permite que el mismo entorno sea suceptible y escuche los cambios que vengan desde diferentes puntos de de la App.
                                     </p>
+                                    <NavLink to="/contacto">Más info</NavLink>
                                 </div>
                             </div>
                         </div>
@@ -41,8 +42,8 @@ export const Servicios = () => {
                                     />
                                 </div>
                                 <div class="card__body card__body--flex">
-                                    <h2 class="card__title">Hisma Desert</h2>
-                                    <span class="card__arrow">&rarr;</span>
+                                    <h2 class="card__title">Back end</h2>
+                                  
                                 </div>
                             </div>
                             <div class="card__side card__side--back">
@@ -56,7 +57,7 @@ export const Servicios = () => {
                     
             </div>
             <div className="container-cv">
-                <a className="btn-cv" href="./archivo-pdf/Damián Bermúdez (5).pdf" download="CV-damian-bermudez.pdf">Descargar CV</a>
+                <a className="btn-cv" href="./cv-pdf/Damián bermúdez - actualizado.pdf" download="CV-damian-bermudez.pdf">Descargar CV</a>
                
             </div>
         </section>
